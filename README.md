@@ -15,7 +15,7 @@ Anggota :
 ## Soal 8
 Setelah melakukan konfigurasi server, maka dilakukan konfigurasi Webserver. Pertama dengan webserver `www.franky.yyy.com`. Pertama, luffy membutuhkan webserver dengan DocumentRoot pada `/var/www/franky.yyy.com`.
 ### Pada Skypie
-- Lakukan penginstallan apache dan mulai
+- Lakukan penginstallan apache dan start
 - install juga php
 ```
 apt-get install apache2 
@@ -27,13 +27,13 @@ apt-get install ca-certificates openssl
 ```
 - Lalu konfigurasi file /etc/apache2/sites-available/franky.D06.com.conf seperti berikut
 ![image](https://user-images.githubusercontent.com/81247727/139520840-a6b7aaf2-4d12-45a7-9c6d-4e80d2ee892c.png)
--Kemudian membuat direktori root dan unzip file dari link github yang sudah disediakan di soal shift
+- Kemudian membuat direktori root dan unzip file dari link github yang sudah disediakan di soal shift
 ![image](https://user-images.githubusercontent.com/81247727/139520871-5efb3adb-1a03-4c18-b2ce-5a1a7eef1d6d.png)
 ### Pada Loguetown
 - Install lynx `apt-get install lynx`
 - `lynx franky.D06.com` untuk Testing
 - Hasilnya akan sebagai berikut:
-- ![image](https://user-images.githubusercontent.com/81247727/139520905-b9903206-bed3-4dca-be83-ffe0998909d2.png)
+![image](https://user-images.githubusercontent.com/81247727/139520905-b9903206-bed3-4dca-be83-ffe0998909d2.png)
 
 ## Soal 9
 Setelah itu, Luffy juga membutuhkan agar url `www.franky.yyy.com/index.php/home` dapat menjadi menjadi `www.franky.yyy.com/home`.
@@ -46,9 +46,9 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule (.*) /index.php/\$1 [L]
 ```
 - Kemudian buka file `/etc/apache2/sites-available/franky.D06.com.conf` dan tambahkan `cp htaccessno9 /var/www/franky.D06.com/.htaccess`
-- Lakukan 'service apache2 restart'
+- Lakukan `service apache2 restart`
 ### Pada Loguetown
-- jalankan `lynx www.frabky.D06.com/home` untuk Testing
+- jalankan `lynx www.franky.D06.com/home` untuk Testing
 - Hasilnya akan sebagai berikut:
 ![image](https://user-images.githubusercontent.com/81247727/139521069-570e2a84-2e34-451d-b4fa-fe7e8ca6a71e.png)
 
