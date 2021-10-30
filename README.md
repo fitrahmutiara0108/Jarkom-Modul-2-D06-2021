@@ -16,16 +16,22 @@ EniesLobby akan dijadikan sebagai DNS Master, Water7 akan dijadikan DNS Slave, d
     ![image](https://user-images.githubusercontent.com/73428220/139525688-707cb8af-06f4-42f1-bc55-af3549e682ed.png)
 2. Melakukan setting network pada masing-masing node
    - Pada Foosha sebagai router:
+   
    ![image](https://user-images.githubusercontent.com/73428220/139525428-f8fd4b04-2bc4-47c8-93a9-ab61cb92fa67.png)
    - Pada Loguetown sebagai client:
+   
    ![image](https://user-images.githubusercontent.com/73428220/139525480-ccae2ff7-7c3e-4432-b5db-65f7bda7e24e.png)
    - Pada Alabasta sebagai client:
+   
    ![image](https://user-images.githubusercontent.com/73428220/139525530-09d62a34-4b2d-4f4f-9063-3f38334eaadf.png)
    - Pada EniesLobby sebagai DNS Master:
+   
    ![image](https://user-images.githubusercontent.com/73428220/139525551-c9d361f2-d3f2-4416-8e23-212e35c1b022.png)
    - Pada Water7 sebagai DNS Slave:
+   
    ![image](https://user-images.githubusercontent.com/73428220/139525610-c5e72938-e577-48ba-b60a-0c07f6015de6.png)
    - Pada Skypie sebagai Web Server:
+   
    ![image](https://user-images.githubusercontent.com/73428220/139525638-e8d337b1-ed92-4083-9425-515741e07100.png)
 3. Restart semua node
 4. Cek semua node ubuntu apakah sudah memiliki ip yang sesuai dengan settingan dengan command ```ip a```
